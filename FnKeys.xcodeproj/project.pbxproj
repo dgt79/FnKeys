@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		373FC41C14081EF1007C6567 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373FC41B14081EF1007C6567 /* Cocoa.framework */; };
+		373FC42614081EF1007C6567 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 373FC42414081EF1007C6567 /* InfoPlist.strings */; };
+		373FC42914081EF1007C6567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 373FC42814081EF1007C6567 /* main.m */; };
+		373FC42C14081EF1007C6567 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 373FC42A14081EF1007C6567 /* Credits.rtf */; };
+		373FC42F14081EF1007C6567 /* FnKeysAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 373FC42E14081EF1007C6567 /* FnKeysAppDelegate.m */; };
+		373FC43214081EF1007C6567 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 373FC43014081EF1007C6567 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		373FC41714081EF1007C6567 /* FnKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FnKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		373FC41B14081EF1007C6567 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		373FC41E14081EF1007C6567 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		373FC41F14081EF1007C6567 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		373FC42014081EF1007C6567 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		373FC42314081EF1007C6567 /* FnKeys-Info.plist */ = {isa = PBXFileReference; path = "FnKeys-Info.plist"; sourceTree = "<group>"; };
+		373FC42514081EF1007C6567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		373FC42714081EF1007C6567 /* FnKeys-Prefix.pch */ = {isa = PBXFileReference; path = "FnKeys-Prefix.pch"; sourceTree = "<group>"; };
+		373FC42814081EF1007C6567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		373FC42B14081EF1007C6567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		373FC42D14081EF1007C6567 /* FnKeysAppDelegate.h */ = {isa = PBXFileReference; path = FnKeysAppDelegate.h; sourceTree = "<group>"; };
+		373FC42E14081EF1007C6567 /* FnKeysAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FnKeysAppDelegate.m; sourceTree = "<group>"; };
+		373FC43114081EF1007C6567 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		373FC41414081EF1007C6567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373FC41C14081EF1007C6567 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		373FC40C14081EF1007C6567 = {
+			isa = PBXGroup;
+			children = (
+				373FC42114081EF1007C6567 /* FnKeys */,
+				373FC41A14081EF1007C6567 /* Frameworks */,
+				373FC41814081EF1007C6567 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		373FC41814081EF1007C6567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				373FC41714081EF1007C6567 /* FnKeys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		373FC41A14081EF1007C6567 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				373FC41B14081EF1007C6567 /* Cocoa.framework */,
+				373FC41D14081EF1007C6567 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		373FC41D14081EF1007C6567 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				373FC41E14081EF1007C6567 /* AppKit.framework */,
+				373FC41F14081EF1007C6567 /* CoreData.framework */,
+				373FC42014081EF1007C6567 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		373FC42114081EF1007C6567 /* FnKeys */ = {
+			isa = PBXGroup;
+			children = (
+				373FC42D14081EF1007C6567 /* FnKeysAppDelegate.h */,
+				373FC42E14081EF1007C6567 /* FnKeysAppDelegate.m */,
+				373FC43014081EF1007C6567 /* MainMenu.xib */,
+				373FC42214081EF1007C6567 /* Supporting Files */,
+			);
+			path = FnKeys;
+			sourceTree = "<group>";
+		};
+		373FC42214081EF1007C6567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				373FC42314081EF1007C6567 /* FnKeys-Info.plist */,
+				373FC42414081EF1007C6567 /* InfoPlist.strings */,
+				373FC42714081EF1007C6567 /* FnKeys-Prefix.pch */,
+				373FC42814081EF1007C6567 /* main.m */,
+				373FC42A14081EF1007C6567 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		373FC41614081EF1007C6567 /* FnKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 373FC43514081EF1007C6567 /* Build configuration list for PBXNativeTarget "FnKeys" */;
+			buildPhases = (
+				373FC41314081EF1007C6567 /* Sources */,
+				373FC41414081EF1007C6567 /* Frameworks */,
+				373FC41514081EF1007C6567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FnKeys;
+			productName = FnKeys;
+			productReference = 373FC41714081EF1007C6567 /* FnKeys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		373FC40E14081EF1007C6567 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 373FC41114081EF1007C6567 /* Build configuration list for PBXProject "FnKeys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 373FC40C14081EF1007C6567;
+			productRefGroup = 373FC41814081EF1007C6567 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				373FC41614081EF1007C6567 /* FnKeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		373FC41514081EF1007C6567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373FC42614081EF1007C6567 /* InfoPlist.strings in Resources */,
+				373FC42C14081EF1007C6567 /* Credits.rtf in Resources */,
+				373FC43214081EF1007C6567 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		373FC41314081EF1007C6567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373FC42914081EF1007C6567 /* main.m in Sources */,
+				373FC42F14081EF1007C6567 /* FnKeysAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		373FC42414081EF1007C6567 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				373FC42514081EF1007C6567 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		373FC42A14081EF1007C6567 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				373FC42B14081EF1007C6567 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		373FC43014081EF1007C6567 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				373FC43114081EF1007C6567 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		373FC43314081EF1007C6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		373FC43414081EF1007C6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		373FC43614081EF1007C6567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FnKeys/FnKeys-Prefix.pch";
+				INFOPLIST_FILE = "FnKeys/FnKeys-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		373FC43714081EF1007C6567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FnKeys/FnKeys-Prefix.pch";
+				INFOPLIST_FILE = "FnKeys/FnKeys-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		373FC41114081EF1007C6567 /* Build configuration list for PBXProject "FnKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				373FC43314081EF1007C6567 /* Debug */,
+				373FC43414081EF1007C6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		373FC43514081EF1007C6567 /* Build configuration list for PBXNativeTarget "FnKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				373FC43614081EF1007C6567 /* Debug */,
+				373FC43714081EF1007C6567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 373FC40E14081EF1007C6567 /* Project object */;
+}
