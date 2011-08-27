@@ -21,12 +21,12 @@
 		373FC41E14081EF1007C6567 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		373FC41F14081EF1007C6567 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		373FC42014081EF1007C6567 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		373FC42314081EF1007C6567 /* FnKeys-Info.plist */ = {isa = PBXFileReference; path = "FnKeys-Info.plist"; sourceTree = "<group>"; };
+		373FC42314081EF1007C6567 /* FnKeys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FnKeys-Info.plist"; sourceTree = "<group>"; };
 		373FC42514081EF1007C6567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		373FC42714081EF1007C6567 /* FnKeys-Prefix.pch */ = {isa = PBXFileReference; path = "FnKeys-Prefix.pch"; sourceTree = "<group>"; };
+		373FC42714081EF1007C6567 /* FnKeys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FnKeys-Prefix.pch"; sourceTree = "<group>"; };
 		373FC42814081EF1007C6567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		373FC42B14081EF1007C6567 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		373FC42D14081EF1007C6567 /* FnKeysAppDelegate.h */ = {isa = PBXFileReference; path = FnKeysAppDelegate.h; sourceTree = "<group>"; };
+		373FC42D14081EF1007C6567 /* FnKeysAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FnKeysAppDelegate.h; sourceTree = "<group>"; };
 		373FC42E14081EF1007C6567 /* FnKeysAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FnKeysAppDelegate.m; sourceTree = "<group>"; };
 		373FC43114081EF1007C6567 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
