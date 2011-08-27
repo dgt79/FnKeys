@@ -2,8 +2,8 @@
 
 @implementation FnKeysAppDelegate
 
-NSString * const off = @"\u2718";
-NSString * const on = @"\u2714";
+NSString * const off = @"Fn_off";
+NSString * const on = @"Fn_on";
 
 -(void)dealloc
 {
@@ -24,15 +24,23 @@ NSString * const on = @"\u2714";
 
 -(IBAction)toogleFnKeys:(id)sender
 {
+//    run the script first
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"FnKeys" ofType:@"scpt"];
+    NSURL* url = [NSURL fileURLWithPath:path];NSDictionary* errors = [NSDictionary dictionary];
+    NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
+    [appleScript executeAndReturnError:nil];
+    [appleScript release];
+
+    sleep(1);
+    
+//    then update the icon
     Boolean fnFlag = false;
-//    CFStringRef appID = CFSTR("com.apple.keyboard");
-//    CFStringRef key = CFSTR("fnState");
 
     NSLog(@"synchronized %d", CFPreferencesAppSynchronize(CFSTR("com.apple.keyboard.fnState")));
 
     CFPropertyListRef val = CFPreferencesCopyAppValue(CFSTR("com.apple.keyboard.fnState"), kCFPreferencesCurrentUser);
     
-    NSLog(@"managed by MCX %d", CFPreferencesAppValueIsForced(CFSTR("com.apple.keyboard.fnState"), kCFPreferencesCurrentUser));
+//    NSLog(@"managed by MCX %d", CFPreferencesAppValueIsForced(CFSTR("com.apple.keyboard.fnState"), kCFPreferencesCurrentUser));
 
     NSLog(@"val %@", val);
     
@@ -40,7 +48,7 @@ NSString * const on = @"\u2714";
         fnFlag = CFBooleanGetValue(val);
         NSLog(@"fnFlag %d", fnFlag);
         
-                
+//        this doesn't work as System Pref loads the plist file only on login        
 //                CFPreferencesSetValue(CFSTR("com.apple.keyboard.fnState"), 
 //                                      (CFBooleanRef)[NSNumber numberWithBool:fnFlag], 
 //                                      kCFPreferencesAnyApplication, 
@@ -55,8 +63,7 @@ NSString * const on = @"\u2714";
         CFRelease(val);
     }
     
-    NSLog(@"synchronized %d", 
-          CFPreferencesAppSynchronize(CFSTR("com.apple.keyboard.fnState")));
+//    NSLog(@"synchronized %d", CFPreferencesAppSynchronize(CFSTR("com.apple.keyboard.fnState")));
 }
 
 @end
