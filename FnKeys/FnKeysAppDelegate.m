@@ -2,8 +2,8 @@
 
 @implementation FnKeysAppDelegate
 
-NSString * const off = @"Fn_off";
-NSString * const on = @"Fn_on";
+NSString * const off = @"\u263c";
+NSString * const on = @"Fn";
 
 -(void)dealloc
 {
@@ -15,18 +15,31 @@ NSString * const on = @"Fn_on";
 {
     statusItem = [[[NSStatusBar systemStatusBar] 
                    statusItemWithLength:NSVariableStatusItemLength]
-                  retain];
-    [statusItem setTitle:off]; 
+                  retain]; 
     [statusItem setEnabled:YES];    
     [statusItem setAction:@selector(toogleFnKeys:)];
     [statusItem setTarget:self];
+    
+    CFPropertyListRef val = CFPreferencesCopyAppValue(CFSTR("com.apple.keyboard.fnState"), kCFPreferencesCurrentUser);
+    Boolean fnFlag = false;
+    if(val) {
+        fnFlag = CFBooleanGetValue(val);
+        NSLog(@"fnFlag %d", fnFlag);
+        if (fnFlag) {        
+            [statusItem setTitle:on];            
+        } else {
+            [statusItem setTitle:off];
+        }
+        CFRelease(val);
+    }
 }
 
 -(IBAction)toogleFnKeys:(id)sender
 {
 //    run the script first
     NSString* path = [[NSBundle mainBundle] pathForResource:@"FnKeys" ofType:@"scpt"];
-    NSURL* url = [NSURL fileURLWithPath:path];NSDictionary* errors = [NSDictionary dictionary];
+    NSURL* url = [NSURL fileURLWithPath:path];
+    NSDictionary* errors = [NSDictionary dictionary];
     NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
     [appleScript executeAndReturnError:nil];
     [appleScript release];
